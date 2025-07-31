@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, Clock } from "lucide-react";
-
 const Hero = () => {
-  return (
-    <section className="min-h-screen flex items-center justify-center bg-canvas-white relative overflow-hidden">
+  return <section className="min-h-screen flex items-center justify-center bg-canvas-white relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-gradient-to-br from-canvas-mist via-canvas-white to-canvas-mist opacity-60"></div>
       
@@ -48,14 +46,10 @@ const Hero = () => {
 
           {/* Scroll Indicator */}
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-            <div className="w-6 h-10 border-2 border-canvas-charcoal/30 rounded-full flex justify-center">
-              <div className="w-1 h-3 bg-canvas-charcoal/50 rounded-full mt-2 animate-pulse"></div>
-            </div>
+            
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
