@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, Clock } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+
 const Hero = () => {
+  const { t } = useLanguage();
   return <section className="min-h-screen flex items-center justify-center bg-canvas-white relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-gradient-to-br from-canvas-mist via-canvas-white to-canvas-mist opacity-60"></div>
@@ -10,11 +13,11 @@ const Hero = () => {
           {/* Event Title */}
           <div className="mb-8">
             <h1 className="text-5xl md:text-7xl font-display text-canvas-charcoal tracking-tight leading-none mb-6 lg:text-8xl font-extrabold">
-              Blank Canvas
+              {t('hero.title')}
             </h1>
             <p className="text-xl md:text-2xl font-display font-light text-canvas-charcoal/70 max-w-3xl mx-auto leading-relaxed">
-              An immersive experience where creativity meets minimalism. 
-              <span className="block mt-2">Join us for an evening of inspiration and connection.</span>
+              {t('hero.subtitle')}
+              <span className="block mt-2">{t('hero.subtitle2')}</span>
             </p>
           </div>
 
@@ -22,15 +25,15 @@ const Hero = () => {
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-12">
             <div className="flex items-center gap-3 text-canvas-charcoal/80">
               <Calendar className="w-5 h-5" />
-              <span className="font-display font-medium">March 15, 2024</span>
+              <span className="font-display font-medium">{t('hero.date')}</span>
             </div>
             <div className="flex items-center gap-3 text-canvas-charcoal/80">
               <Clock className="w-5 h-5" />
-              <span className="font-display font-medium">7:00 PM - 11:00 PM</span>
+              <span className="font-display font-medium">{t('hero.time')}</span>
             </div>
             <div className="flex items-center gap-3 text-canvas-charcoal/80">
               <MapPin className="w-5 h-5" />
-              <span className="font-display font-medium">Gallery District, Downtown</span>
+              <span className="font-display font-medium">{t('hero.location')}</span>
             </div>
           </div>
 

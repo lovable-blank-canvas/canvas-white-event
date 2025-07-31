@@ -1,27 +1,29 @@
 import { Card } from "@/components/ui/card";
 import { Users, Palette, Coffee, Music } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const EventDetails = () => {
+  const { t } = useLanguage();
   const features = [
     {
       icon: Palette,
-      title: "Creative Workshops",
-      description: "Hands-on sessions with renowned artists and designers exploring minimalist aesthetics."
+      titleKey: "details.workshop.title",
+      descKey: "details.workshop.desc"
     },
     {
       icon: Users,
-      title: "Networking",
-      description: "Connect with like-minded creatives, entrepreneurs, and thought leaders in an intimate setting."
+      titleKey: "details.networking.title", 
+      descKey: "details.networking.desc"
     },
     {
       icon: Coffee,
-      title: "Curated Experience",
-      description: "Artisanal refreshments and carefully selected ambient music throughout the evening."
+      titleKey: "details.experience.title",
+      descKey: "details.experience.desc"
     },
     {
       icon: Music,
-      title: "Live Performance",
-      description: "Ambient acoustic performances that complement our minimalist aesthetic."
+      titleKey: "details.performance.title",
+      descKey: "details.performance.desc"
     }
   ];
 
@@ -31,12 +33,11 @@ const EventDetails = () => {
         {/* Section Header */}
         <div className="text-center mb-16 lg:mb-20">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-light text-canvas-charcoal mb-6">
-            An Evening of
-            <span className="block">Pure Inspiration</span>
+            {t('details.title')}
+            <span className="block">{t('details.title2')}</span>
           </h2>
           <p className="text-lg text-canvas-charcoal/70 max-w-2xl mx-auto font-body leading-relaxed">
-            Blank Canvas brings together creative minds in a thoughtfully designed space 
-            that celebrates the beauty of simplicity and the power of imagination.
+            {t('details.subtitle')}
           </p>
         </div>
 
@@ -52,10 +53,10 @@ const EventDetails = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-display font-medium text-canvas-charcoal mb-3">
-                    {feature.title}
+                    {t(feature.titleKey)}
                   </h3>
                   <p className="text-canvas-charcoal/70 font-body leading-relaxed">
-                    {feature.description}
+                    {t(feature.descKey)}
                   </p>
                 </div>
               </div>
@@ -66,28 +67,28 @@ const EventDetails = () => {
         {/* Event Schedule */}
         <div className="bg-canvas-mist rounded-2xl p-8 lg:p-12">
           <h3 className="text-2xl font-display font-medium text-canvas-charcoal mb-8 text-center">
-            Event Schedule
+            {t('details.schedule')}
           </h3>
           <div className="space-y-6">
             <div className="flex justify-between items-center py-4 border-b border-canvas-silver/30">
               <span className="font-display font-medium text-canvas-charcoal">7:00 PM</span>
-              <span className="text-canvas-charcoal/70 font-body">Welcome & Registration</span>
+              <span className="text-canvas-charcoal/70 font-body">{t('details.schedule.welcome')}</span>
             </div>
             <div className="flex justify-between items-center py-4 border-b border-canvas-silver/30">
               <span className="font-display font-medium text-canvas-charcoal">7:30 PM</span>
-              <span className="text-canvas-charcoal/70 font-body">Opening Presentation</span>
+              <span className="text-canvas-charcoal/70 font-body">{t('details.schedule.opening')}</span>
             </div>
             <div className="flex justify-between items-center py-4 border-b border-canvas-silver/30">
               <span className="font-display font-medium text-canvas-charcoal">8:00 PM</span>
-              <span className="text-canvas-charcoal/70 font-body">Creative Workshops Begin</span>
+              <span className="text-canvas-charcoal/70 font-body">{t('details.schedule.workshops')}</span>
             </div>
             <div className="flex justify-between items-center py-4 border-b border-canvas-silver/30">
               <span className="font-display font-medium text-canvas-charcoal">9:30 PM</span>
-              <span className="text-canvas-charcoal/70 font-body">Networking & Refreshments</span>
+              <span className="text-canvas-charcoal/70 font-body">{t('details.schedule.networking')}</span>
             </div>
             <div className="flex justify-between items-center py-4">
               <span className="font-display font-medium text-canvas-charcoal">10:30 PM</span>
-              <span className="text-canvas-charcoal/70 font-body">Closing Performance</span>
+              <span className="text-canvas-charcoal/70 font-body">{t('details.schedule.closing')}</span>
             </div>
           </div>
         </div>

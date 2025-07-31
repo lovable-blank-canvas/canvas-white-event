@@ -1,0 +1,108 @@
+import React, { createContext, useContext, useState, ReactNode } from 'react';
+
+type Language = 'EN' | 'CN';
+
+interface LanguageContextType {
+  language: Language;
+  setLanguage: (lang: Language) => void;
+  t: (key: string) => string;
+}
+
+const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
+
+const translations = {
+  EN: {
+    // Navigation
+    'nav.title': 'Blank Canvas',
+    
+    // Hero
+    'hero.title': 'Blank Canvas',
+    'hero.subtitle': 'An immersive experience where creativity meets minimalism.',
+    'hero.subtitle2': 'Join us for an evening of inspiration and connection.',
+    'hero.date': 'March 15, 2024',
+    'hero.time': '7:00 PM - 11:00 PM',
+    'hero.location': 'Gallery District, Downtown',
+    
+    // Event Details
+    'details.title': 'An Evening of',
+    'details.title2': 'Pure Inspiration',
+    'details.subtitle': 'Blank Canvas brings together creative minds in a thoughtfully designed space that celebrates the beauty of simplicity and the power of imagination.',
+    'details.workshop.title': 'Creative Workshops',
+    'details.workshop.desc': 'Hands-on sessions with renowned artists and designers exploring minimalist aesthetics.',
+    'details.networking.title': 'Networking',
+    'details.networking.desc': 'Connect with like-minded creatives, entrepreneurs, and thought leaders in an intimate setting.',
+    'details.experience.title': 'Curated Experience',
+    'details.experience.desc': 'Artisanal refreshments and carefully selected ambient music throughout the evening.',
+    'details.performance.title': 'Live Performance',
+    'details.performance.desc': 'Ambient acoustic performances that complement our minimalist aesthetic.',
+    'details.schedule': 'Event Schedule',
+    'details.schedule.welcome': 'Welcome & Registration',
+    'details.schedule.opening': 'Opening Presentation',
+    'details.schedule.workshops': 'Creative Workshops Begin',
+    'details.schedule.networking': 'Networking & Refreshments',
+    'details.schedule.closing': 'Closing Performance',
+    
+    // Footer
+    'footer.copyright': '© 2025 Blank Canvas. All rights reserved.',
+    'footer.privacy': 'Privacy Policy',
+    'footer.terms': 'Terms of Service',
+  },
+  CN: {
+    // Navigation
+    'nav.title': '空白画布',
+    
+    // Hero
+    'hero.title': '空白画布',
+    'hero.subtitle': '创意与极简主义相遇的沉浸式体验。',
+    'hero.subtitle2': '与我们一起度过启发灵感与连接心灵的夜晚。',
+    'hero.date': '2024年3月15日',
+    'hero.time': '晚上7:00 - 11:00',
+    'hero.location': '市中心画廊区',
+    
+    // Event Details
+    'details.title': '纯粹灵感的',
+    'details.title2': '夜晚',
+    'details.subtitle': '空白画布汇集富有创意的思想者，在一个经过精心设计的空间中，庆祝简约之美和想象力的力量。',
+    'details.workshop.title': '创意工作坊',
+    'details.workshop.desc': '与知名艺术家和设计师一起探索极简美学的实践课程。',
+    'details.networking.title': '社交联谊',
+    'details.networking.desc': '在温馨的环境中与志同道合的创意人士、企业家和思想领袖建立联系。',
+    'details.experience.title': '精心策划的体验',
+    'details.experience.desc': '整个夜晚提供手工制作的茶点和精心挑选的环境音乐。',
+    'details.performance.title': '现场表演',
+    'details.performance.desc': '与我们极简美学相得益彰的环境音响表演。',
+    'details.schedule': '活动安排',
+    'details.schedule.welcome': '欢迎与签到',
+    'details.schedule.opening': '开幕演讲',
+    'details.schedule.workshops': '创意工作坊开始',
+    'details.schedule.networking': '社交与茶点',
+    'details.schedule.closing': '闭幕表演',
+    
+    // Footer
+    'footer.copyright': '© 2025 空白画布。保留所有权利。',
+    'footer.privacy': '隐私政策',
+    'footer.terms': '服务条款',
+  }
+};
+
+export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
+  const [language, setLanguage] = useState<Language>('EN');
+
+  const t = (key: string): string => {
+    return translations[language][key] || key;
+  };
+
+  return (
+    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+      {children}
+    </LanguageContext.Provider>
+  );
+};
+
+export const useLanguage = () => {
+  const context = useContext(LanguageContext);
+  if (context === undefined) {
+    throw new Error('useLanguage must be used within a LanguageProvider');
+  }
+  return context;
+};
