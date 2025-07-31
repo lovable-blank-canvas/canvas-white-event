@@ -1,6 +1,6 @@
 # Her Circle Event Website
 
-Modern event website for Her Circle's inaugural white-themed networking event. Built with React, TypeScript, and Tailwind CSS featuring bilingual support (English/Chinese) and elegant minimalist design.
+Modern event website for Her Circle's inaugural white-themed networking event. Built with ~~React, TypeScript, and Tailwind CSS~~ Lovable AI, CC and Darrel Wilson's youtube tutorial. Website features bilingual support (English/Chinese) and elegant minimalist design.
 
 ## Features
 
@@ -43,7 +43,7 @@ Modern event website for Her Circle's inaugural white-themed networking event. B
    ```bash
    npm run dev
    ```
-   
+
    The app will be available at `http://localhost:8080`
 
 ### Development Commands
@@ -51,7 +51,7 @@ Modern event website for Her Circle's inaugural white-themed networking event. B
 ```bash
 npm run dev          # Start development server on port 8080
 npm run build        # Production build
-npm run build:dev    # Development build 
+npm run build:dev    # Development build
 npm run lint         # Run ESLint
 npm run preview      # Preview production build
 ```
@@ -63,7 +63,7 @@ src/
 ├── components/           # React components
 │   ├── ui/              # shadcn/ui components (auto-generated)
 │   ├── Hero.tsx         # Main hero section
-│   ├── EventDetails.tsx # Event information section  
+│   ├── EventDetails.tsx # Event information section
 │   ├── Navigation.tsx   # Header navigation
 │   └── Footer.tsx       # Footer component
 ├── contexts/            # React contexts
