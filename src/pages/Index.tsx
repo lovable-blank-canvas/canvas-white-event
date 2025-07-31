@@ -1,7 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import EventDetails from "@/components/EventDetails";
-import Registration from "@/components/Registration";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -10,7 +9,6 @@ const Index = () => {
       <Navigation />
       <Hero />
       <EventDetails />
-      <Registration />
       <Footer />
     </div>
   );
