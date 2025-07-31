@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="text-center">
           {/* Event Title */}
           <div className="mb-8">
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-light text-canvas-charcoal tracking-tight leading-none mb-6">
+            <h1 className="text-5xl md:text-7xl font-display text-canvas-charcoal tracking-tight leading-none mb-6 lg:text-8xl font-extrabold">
               Blank Canvas
             </h1>
             <p className="text-xl md:text-2xl font-display font-light text-canvas-charcoal/70 max-w-3xl mx-auto leading-relaxed">
@@ -35,14 +35,7 @@ const Hero = () => {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-            <Button variant="canvas" size="xl" className="font-display font-medium w-full sm:w-auto">
-              Reserve Your Spot
-            </Button>
-            <Button variant="minimal" size="xl" className="font-display font-medium w-full sm:w-auto">
-              Learn More
-            </Button>
-          </div>
+          
 
           {/* Scroll Indicator */}
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
