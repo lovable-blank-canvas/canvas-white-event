@@ -13,7 +13,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 const translations = {
   EN: {
     // Navigation
-    'nav.title': 'Blank Canvas',
+    'nav.title': 'Her Circle',
     
     // Hero
     'hero.title': 'Blank Canvas',
@@ -43,13 +43,13 @@ const translations = {
     'details.schedule.closing': 'Closing Performance',
     
     // Footer
-    'footer.copyright': '© 2025 Blank Canvas. All rights reserved.',
+    'footer.copyright': '© 2025 Her Circle. All rights reserved.',
     'footer.privacy': 'Privacy Policy',
     'footer.terms': 'Terms of Service',
   },
   CN: {
     // Navigation
-    'nav.title': '空白画布',
+    'nav.title': 'Her Circle',
     
     // Hero
     'hero.title': '空白画布',
@@ -79,7 +79,7 @@ const translations = {
     'details.schedule.closing': '闭幕表演',
     
     // Footer
-    'footer.copyright': '© 2025 空白画布。保留所有权利。',
+    'footer.copyright': '© 2025 Her Circle。保留所有权利。',
     'footer.privacy': '隐私政策',
     'footer.terms': '服务条款',
   }
