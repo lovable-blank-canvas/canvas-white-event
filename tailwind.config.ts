@@ -61,7 +61,26 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				canvas: {
+					white: 'hsl(var(--canvas-white))',
+					charcoal: 'hsl(var(--canvas-charcoal))',
+					silver: 'hsl(var(--canvas-silver))',
+					mist: 'hsl(var(--canvas-mist))'
 				}
+			},
+			fontFamily: {
+				'display': ['Inter', 'system-ui', 'sans-serif'],
+				'body': ['Inter', 'system-ui', 'sans-serif']
+			},
+			boxShadow: {
+				'minimal': 'var(--shadow-minimal)',
+				'elegant': 'var(--shadow-elegant)',
+				'dramatic': 'var(--shadow-dramatic)'
+			},
+			transitionTimingFunction: {
+				'smooth': 'cubic-bezier(0.4, 0, 0.2, 1)',
+				'elegant': 'cubic-bezier(0.25, 0.1, 0.25, 1)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

@@ -1,0 +1,61 @@
+import { Button } from "@/components/ui/button";
+import { Calendar, MapPin, Clock } from "lucide-react";
+
+const Hero = () => {
+  return (
+    <section className="min-h-screen flex items-center justify-center bg-canvas-white relative overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 bg-gradient-to-br from-canvas-mist via-canvas-white to-canvas-mist opacity-60"></div>
+      
+      <div className="max-w-6xl mx-auto px-6 lg:px-8 relative z-10">
+        <div className="text-center">
+          {/* Event Title */}
+          <div className="mb-8">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-light text-canvas-charcoal tracking-tight leading-none mb-6">
+              Blank Canvas
+            </h1>
+            <p className="text-xl md:text-2xl font-display font-light text-canvas-charcoal/70 max-w-3xl mx-auto leading-relaxed">
+              An immersive experience where creativity meets minimalism. 
+              <span className="block mt-2">Join us for an evening of inspiration and connection.</span>
+            </p>
+          </div>
+
+          {/* Event Details */}
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-12">
+            <div className="flex items-center gap-3 text-canvas-charcoal/80">
+              <Calendar className="w-5 h-5" />
+              <span className="font-display font-medium">March 15, 2024</span>
+            </div>
+            <div className="flex items-center gap-3 text-canvas-charcoal/80">
+              <Clock className="w-5 h-5" />
+              <span className="font-display font-medium">7:00 PM - 11:00 PM</span>
+            </div>
+            <div className="flex items-center gap-3 text-canvas-charcoal/80">
+              <MapPin className="w-5 h-5" />
+              <span className="font-display font-medium">Gallery District, Downtown</span>
+            </div>
+          </div>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+            <Button variant="canvas" size="xl" className="font-display font-medium w-full sm:w-auto">
+              Reserve Your Spot
+            </Button>
+            <Button variant="minimal" size="xl" className="font-display font-medium w-full sm:w-auto">
+              Learn More
+            </Button>
+          </div>
+
+          {/* Scroll Indicator */}
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+            <div className="w-6 h-10 border-2 border-canvas-charcoal/30 rounded-full flex justify-center">
+              <div className="w-1 h-3 bg-canvas-charcoal/50 rounded-full mt-2 animate-pulse"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
