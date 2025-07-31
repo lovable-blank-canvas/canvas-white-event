@@ -1,73 +1,108 @@
-# Welcome to your Lovable project
+# Her Circle Event Website
 
-## Project info
+Modern event website for Her Circle's inaugural white-themed networking event. Built with React, TypeScript, and Tailwind CSS featuring bilingual support (English/Chinese) and elegant minimalist design.
 
-**URL**: https://lovable.dev/projects/bc49e324-24aa-4c22-82f9-860612439b91
+## Features
 
-## How can I edit this code?
+- 🎨 **Elegant Design**: Custom canvas color palette with minimalist aesthetic
+- 🌐 **Bilingual Support**: English and Chinese language switching
+- 📱 **Responsive**: Mobile-first design that works on all devices
+- ⚡ **Fast**: Built with Vite for optimal performance
+- 🎯 **Accessible**: Built with shadcn/ui components based on Radix UI
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use Lovable**
+- **Framework**: React 18 + TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS with custom design tokens
+- **Components**: shadcn/ui (Radix UI primitives)
+- **Routing**: React Router
+- **Data Fetching**: TanStack Query
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/bc49e324-24aa-4c22-82f9-860612439b91) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- Node.js 18+ and npm
+- Git
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd canvas-white-event
+   ```
 
-Follow these steps:
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
+   
+   The app will be available at `http://localhost:8080`
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Development Commands
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```bash
+npm run dev          # Start development server on port 8080
+npm run build        # Production build
+npm run build:dev    # Development build 
+npm run lint         # Run ESLint
+npm run preview      # Preview production build
 ```
 
-**Edit a file directly in GitHub**
+## Project Structure
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```
+src/
+├── components/           # React components
+│   ├── ui/              # shadcn/ui components (auto-generated)
+│   ├── Hero.tsx         # Main hero section
+│   ├── EventDetails.tsx # Event information section  
+│   ├── Navigation.tsx   # Header navigation
+│   └── Footer.tsx       # Footer component
+├── contexts/            # React contexts
+│   └── LanguageContext.tsx # Bilingual support
+├── pages/               # Route components
+│   ├── Index.tsx        # Main landing page
+│   └── NotFound.tsx     # 404 page
+├── lib/
+│   └── utils.ts         # Utility functions
+└── hooks/               # Custom React hooks
+```
 
-**Use GitHub Codespaces**
+## Design System
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+The project uses a custom design system with:
 
-## What technologies are used for this project?
+- **Colors**: Custom canvas palette (`canvas-white`, `canvas-charcoal`, `canvas-silver`, `canvas-mist`)
+- **Typography**: Inter font family for both display and body text
+- **Shadows**: Custom shadow utilities (`minimal`, `elegant`, `dramatic`)
+- **Components**: Built with shadcn/ui for consistency and accessibility
 
-This project is built with:
+## Adding New Components
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+To add new shadcn/ui components:
 
-## How can I deploy this project?
+```bash
+npx shadcn@latest add [component-name]
+```
 
-Simply open [Lovable](https://lovable.dev/projects/bc49e324-24aa-4c22-82f9-860612439b91) and click on Share -> Publish.
+## Contributing
 
-## Can I connect a custom domain to my Lovable project?
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Make your changes
+4. Run linting (`npm run lint`)
+5. Commit your changes (`git commit -m 'Add amazing feature'`)
+6. Push to the branch (`git push origin feature/amazing-feature`)
+7. Open a Pull Request
 
-Yes, you can!
+## License
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This project is private and proprietary to Her Circle.
