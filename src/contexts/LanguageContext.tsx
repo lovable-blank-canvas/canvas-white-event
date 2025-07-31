@@ -21,7 +21,7 @@ const translations = {
     'hero.subtitle2': 'Join us for an elegant white-themed afternoon of connection and inspiration.',
     'hero.date': 'September 6, 2025',
     'hero.time': '3:00 PM - 5:00 PM',
-    'hero.location': 'Gallery District, Downtown',
+    'hero.location': 'TBC',
     
     // Event Details
     'details.title': 'An Evening of',
@@ -57,7 +57,7 @@ const translations = {
     'hero.subtitle2': '与我们一起度过优雅的白色主题下午，连接心灵，启发灵感。',
     'hero.date': '2025年9月6日',
     'hero.time': '下午3:00 - 5:00',
-    'hero.location': '市中心画廊区',
+    'hero.location': 'TBC',
     
     // Event Details
     'details.title': '纯粹灵感的',
