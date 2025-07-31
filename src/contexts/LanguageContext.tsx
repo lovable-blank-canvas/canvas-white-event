@@ -17,10 +17,10 @@ const translations = {
     
     // Hero
     'hero.title': 'Blank Canvas',
-    'hero.subtitle': 'An immersive experience where creativity meets minimalism.',
-    'hero.subtitle2': 'Join us for an evening of inspiration and connection.',
-    'hero.date': 'March 15, 2024',
-    'hero.time': '7:00 PM - 11:00 PM',
+    'hero.subtitle': 'Welcome to Her Circle\'s inaugural event!',
+    'hero.subtitle2': 'Join us for an elegant white-themed afternoon of connection and inspiration.',
+    'hero.date': 'September 6, 2025',
+    'hero.time': '3:00 PM - 5:00 PM',
     'hero.location': 'Gallery District, Downtown',
     
     // Event Details
@@ -53,10 +53,10 @@ const translations = {
     
     // Hero
     'hero.title': '空白画布',
-    'hero.subtitle': '创意与极简主义相遇的沉浸式体验。',
-    'hero.subtitle2': '与我们一起度过启发灵感与连接心灵的夜晚。',
-    'hero.date': '2024年3月15日',
-    'hero.time': '晚上7:00 - 11:00',
+    'hero.subtitle': '欢迎参加Her Circle的首届活动！',
+    'hero.subtitle2': '与我们一起度过优雅的白色主题下午，连接心灵，启发灵感。',
+    'hero.date': '2025年9月6日',
+    'hero.time': '下午3:00 - 5:00',
     'hero.location': '市中心画廊区',
     
     // Event Details
