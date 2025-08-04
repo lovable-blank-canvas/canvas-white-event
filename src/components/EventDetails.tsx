@@ -70,26 +70,24 @@ const EventDetails = () => {
             {t('details.schedule')}
           </h3>
           <div className="space-y-6">
-            <div className="flex justify-between items-center py-4 border-b border-canvas-silver/30">
-              <span className="font-display font-medium text-canvas-charcoal">7:00 PM</span>
-              <span className="text-canvas-charcoal/70 font-body">{t('details.schedule.welcome')}</span>
-            </div>
-            <div className="flex justify-between items-center py-4 border-b border-canvas-silver/30">
-              <span className="font-display font-medium text-canvas-charcoal">7:30 PM</span>
-              <span className="text-canvas-charcoal/70 font-body">{t('details.schedule.opening')}</span>
-            </div>
-            <div className="flex justify-between items-center py-4 border-b border-canvas-silver/30">
-              <span className="font-display font-medium text-canvas-charcoal">8:00 PM</span>
-              <span className="text-canvas-charcoal/70 font-body">{t('details.schedule.workshops')}</span>
-            </div>
-            <div className="flex justify-between items-center py-4 border-b border-canvas-silver/30">
-              <span className="font-display font-medium text-canvas-charcoal">9:30 PM</span>
-              <span className="text-canvas-charcoal/70 font-body">{t('details.schedule.networking')}</span>
-            </div>
-            <div className="flex justify-between items-center py-4">
-              <span className="font-display font-medium text-canvas-charcoal">10:30 PM</span>
-              <span className="text-canvas-charcoal/70 font-body">{t('details.schedule.closing')}</span>
-            </div>
+            {[
+              { time: '2:45 PM', description: t('details.schedule.welcome') },
+              { time: '3:00 PM', description: t('details.schedule.opening') },
+              { time: '3:20 PM', description: t('details.schedule.iceBreaker') },
+              
+              { time: '3:50 PM', description: t('details.schedule.speedFriending') },
+              { time: '4:10 PM', description: t('details.schedule.aromaWorkshop') },
+              { time: '4:50 PM', description: t('details.schedule.photoSession') },
+              { time: '5:00 PM', description: t('details.schedule.eventEnd') },
+            ].map((item, index) => (
+              <div 
+                key={index} 
+                className={`flex justify-between items-center py-4 ${index < 7 ? 'border-b border-canvas-silver/30' : ''}`}
+              >
+                <span className="font-display font-medium text-canvas-charcoal">{item.time}</span>
+                <span className="text-canvas-charcoal/70 font-body">{item.description}</span>
+              </div>
+            ))}
           </div>
         </div>
       </div>

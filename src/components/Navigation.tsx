@@ -10,7 +10,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <h1 className="text-xl font-display font-semibold text-canvas-charcoal tracking-tight">
-              {t('nav.title')}
+              <span style={{ color: '#665fd1' }}>{t('nav.title')}</span>
             </h1>
           </div>
 

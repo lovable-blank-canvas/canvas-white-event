@@ -1,6 +1,6 @@
-# Her Circle Event Website
+# Herizon Event Website
 
-Modern event website for Her Circle's inaugural white-themed networking event. Built with ~~React, TypeScript, and Tailwind CSS~~ Lovable AI, CC and Darrel Wilson's youtube tutorial. Website features bilingual support (English/Chinese) and elegant minimalist design.
+Modern event website for Herizon's inaugural white-themed networking event. Built with ~~React, TypeScript, and Tailwind CSS~~ Lovable AI, CC and Darrel Wilson's youtube tutorial. Website features bilingual support (English/Chinese) and elegant minimalist design.
 
 ## Features
 

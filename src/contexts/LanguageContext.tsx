@@ -13,11 +13,11 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 const translations = {
   EN: {
     // Navigation
-    'nav.title': 'Her Circle',
+    'nav.title': 'Her♀zon',
     
     // Hero
     'hero.title': 'Blank Canvas',
-    'hero.subtitle': 'Welcome to Her Circle\'s inaugural event!',
+    'hero.subtitle': 'Welcome to Her♀zon\'s inaugural event!',
     'hero.subtitle2': 'Join us for an elegant white-themed afternoon of connection and inspiration.',
     'hero.date': 'September 6, 2025',
     'hero.time': '3:00 PM - 5:00 PM',
@@ -37,23 +37,26 @@ const translations = {
     'details.performance.desc': 'Ambient acoustic performances that complement our minimalist aesthetic.',
     'details.schedule': 'Event Schedule',
     'details.schedule.welcome': 'Welcome & Registration',
-    'details.schedule.opening': 'Opening Presentation',
-    'details.schedule.workshops': 'Creative Workshops Begin',
-    'details.schedule.networking': 'Networking & Refreshments',
-    'details.schedule.closing': 'Closing Performance',
+    'details.schedule.opening': 'Welcome message from Her♀zon and Event Sponsor',
+    'details.schedule.iceBreaker': 'Ice Breaker',
+    
+    'details.schedule.speedFriending': 'Speed Friending',
+    'details.schedule.aromaWorkshop': 'Aroma Workshop (TBC)',
+    'details.schedule.photoSession': 'Photo Session',
+    'details.schedule.eventEnd': 'Event End',
     
     // Footer
-    'footer.copyright': '© 2025 Her Circle. All rights reserved.',
+    'footer.copyright': '© 2025 Her♀zon. All rights reserved.',
     'footer.privacy': 'Privacy Policy',
     'footer.terms': 'Terms of Service',
   },
   CN: {
     // Navigation
-    'nav.title': 'Her Circle',
+    'nav.title': 'Her♀zon',
     
     // Hero
     'hero.title': '空白画布',
-    'hero.subtitle': '欢迎参加Her Circle的首届活动！',
+    'hero.subtitle': '欢迎参加Her♀zon的首届活动！',
     'hero.subtitle2': '与我们一起度过优雅的白色主题下午，连接心灵，启发灵感。',
     'hero.date': '2025年9月6日',
     'hero.time': '下午3:00 - 5:00',
@@ -73,13 +76,16 @@ const translations = {
     'details.performance.desc': '与我们极简美学相得益彰的环境音响表演。',
     'details.schedule': '活动安排',
     'details.schedule.welcome': '欢迎与签到',
-    'details.schedule.opening': '开幕演讲',
-    'details.schedule.workshops': '创意工作坊开始',
-    'details.schedule.networking': '社交与茶点',
-    'details.schedule.closing': '闭幕表演',
+    'details.schedule.opening': 'Her♀zon及活动赞助商致欢迎辞',
+    'details.schedule.iceBreaker': '破冰游戏',
+    
+    'details.schedule.speedFriending': '速配交友',
+    'details.schedule.aromaWorkshop': '香薰工作坊（待定）',
+    'details.schedule.photoSession': '拍照留念',
+    'details.schedule.eventEnd': '活动结束',
     
     // Footer
-    'footer.copyright': '© 2025 Her Circle。保留所有权利。',
+    'footer.copyright': '© 2025 Her♀zon。保留所有权利。',
     'footer.privacy': '隐私政策',
     'footer.terms': '服务条款',
   }
