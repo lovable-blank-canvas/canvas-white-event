@@ -1,17 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useLanguage } from "@/contexts/LanguageContext";
+import HerizonLogo from '/herizon-logo.jpg';
 
 const Navigation = () => {
   const { language, setLanguage, t } = useLanguage();
   return <nav className="fixed top-0 left-0 right-0 z-50 bg-canvas-white/80 backdrop-blur-sm border-b border-canvas-silver/30">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-24">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-xl font-display font-semibold text-canvas-charcoal tracking-tight">
-              <span style={{ color: '#665fd1' }}>{t('nav.title')}</span>
-            </h1>
+            <img src={HerizonLogo} alt="Her♀zon Logo" className="h-12" />
           </div>
 
           {/* Navigation Menu */}
