@@ -1,14 +1,14 @@
 import { Card } from "@/components/ui/card";
-import { Users, Palette, Coffee, Music } from "lucide-react";
+import { Users, Palette, Coffee, Music, Sparkles } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const EventDetails = () => {
   const { t } = useLanguage();
   const features = [
     {
-      icon: Palette,
-      titleKey: "details.workshop.title",
-      descKey: "details.workshop.desc"
+      icon: Sparkles,
+      titleKey: "details.theme.title",
+      descKey: "details.theme.desc"
     },
     {
       icon: Users,
@@ -16,14 +16,14 @@ const EventDetails = () => {
       descKey: "details.networking.desc"
     },
     {
+      icon: Palette,
+      titleKey: "details.workshop.title",
+      descKey: "details.workshop.desc"
+    },
+    {
       icon: Coffee,
       titleKey: "details.experience.title",
       descKey: "details.experience.desc"
-    },
-    {
-      icon: Music,
-      titleKey: "details.performance.title",
-      descKey: "details.performance.desc"
     }
   ];
 
