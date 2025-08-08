@@ -6,9 +6,9 @@ const EventDetails = () => {
   const { t } = useLanguage();
   const features = [
     {
-      icon: Sparkles,
-      titleKey: "details.theme.title",
-      descKey: "details.theme.desc"
+      icon: Palette,
+      titleKey: "details.workshop.title",
+      descKey: "details.workshop.desc"
     },
     {
       icon: Users,
@@ -16,9 +16,9 @@ const EventDetails = () => {
       descKey: "details.networking.desc"
     },
     {
-      icon: Palette,
-      titleKey: "details.workshop.title",
-      descKey: "details.workshop.desc"
+      icon: Sparkles,
+      titleKey: "details.theme.title",
+      descKey: "details.theme.desc"
     },
     {
       icon: Coffee,
