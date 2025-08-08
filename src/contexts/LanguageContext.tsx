@@ -80,7 +80,7 @@ const translations = {
     'details.schedule.opening': '欢迎致辞',
     'details.schedule.iceBreaker': '破冰游戏',
     'details.schedule.speedFriending': '速配交友',
-    'details.schedule.aromaWorkshop': '由活动合作伙伴举办的香薰疗法工作坊',
+    'details.schedule.aromaWorkshop': '由活动合作伙伴举办的香薰疗法',
     'details.schedule.photoSession': '拍照留念',
     'details.schedule.eventEnd': '活动结束',
 
