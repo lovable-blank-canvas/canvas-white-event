@@ -21,7 +21,7 @@ const translations = {
     'hero.subtitle2': 'Join us for an elegant white-themed afternoon of fresh encounters and endless possibilities',
     'hero.date': 'September 6, 2025',
     'hero.time': '3:00 PM - 5:00 PM',
-    'hero.location': '1 Holland Village Event Space',
+    'hero.location': 'One Holland Village Event Space',
 
     // Event Details
     'details.title': 'An Afternoon of',
@@ -60,7 +60,7 @@ const translations = {
     'hero.subtitle2': '与我们一起在优雅的白色主题下午，迎接新的邂逅和无限的可能性。',
     'hero.date': '2025年9月6日',
     'hero.time': '下午3:00 - 5:00',
-    'hero.location': '1 Holland Village 活动空间',
+    'hero.location': 'One Holland Village 活动空间',
 
     // Event Details
     'details.title': '一个下午的',
